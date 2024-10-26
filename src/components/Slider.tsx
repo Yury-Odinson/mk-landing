@@ -2,6 +2,8 @@ import React from "react";
 import {SliderItem} from "./SliderItem";
 import {sliderItems} from "../tools/store";
 import {SliderItemProps} from "../tools/types";
+import ImgArrowL from "../assets/img/arrow-l.png";
+import ImgArrowR from "../assets/img/arrow-r.png";
 
 export const Slider: React.FC = () => {
     return (
@@ -18,6 +20,16 @@ export const Slider: React.FC = () => {
                         key={item.id}
                     />
                 ))}
+            </div>
+
+            <div className="slider__nav">
+                <button className="slider__nav-btn">
+                    <img src={ImgArrowL} alt="arrow-left"/>
+                </button>
+
+                <button className="slider__nav-btn">
+                    <img src={ImgArrowR} alt="arrow-right"/>
+                </button>
             </div>
 
         </div>

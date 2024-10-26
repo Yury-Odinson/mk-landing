@@ -21,6 +21,13 @@ code {
     monospace;
 }
 
+button {
+    background-color: #FFFFFF00;
+    border: none;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
 .App {
     margin: 0 auto;
 }
@@ -73,6 +80,18 @@ code {
     overflow-x: scroll;
 }
 
+.slider__nav {
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1.4rem;
+}
+
+.slider__nav-btn {
+    width: 32px;
+    height: 32px;
+    outline: 1px solid #DEDEDE77;
+}
+
 .slider__item {
     padding: 0.75rem;
     display: flex;
@@ -85,6 +104,7 @@ code {
     -webkit-box-shadow: 4px 4px 8px -6px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 4px 8px -6px rgba(34, 60, 80, 0.2);
     box-shadow: 4px 4px 8px -6px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
 }
 
 .slider__item-chip {
@@ -115,5 +135,12 @@ code {
     text-align: left;
     font-size: 1.1rem;
     line-height: 1.7rem;
-    /*font-weight: 600;*/
+}
+
+.slider__items::-webkit-scrollbar {
+    height: 0;
+}
+
+.slider__items::-webkit-scrollbar-track {
+    height: 0;
 }
