@@ -6,8 +6,8 @@ export const Main: React.FC = () => {
     return (
         <main>
             <span>main</span>
-            <Slider/>
-            <SubscriptionForm/>
+            {/*<Slider/>*/}
+            {/*<SubscriptionForm/>*/}
         </main>
     );
 };
