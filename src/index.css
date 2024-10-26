@@ -43,7 +43,8 @@ input, textarea {
     box-shadow: 5px 2px 19px -6px rgba(34, 60, 80, 0.2);
 }
 
-.header-wrapper {
+.header-wrapper,
+.footer-wrapper {
     margin: 0 auto;
     padding: 1.3rem;
     display: flex;
@@ -52,11 +53,16 @@ input, textarea {
     max-width: 1440px;
 }
 
+.footer-wrapper {
+    padding: 1.3rem 7.5rem;
+}
+
 .header-wrapper > * {
     padding: 0 6rem;
 }
 
-.header__title {
+.header__title,
+.footer__title {
     font-size: 1.3rem;
     font-weight: 500;
 }
@@ -151,7 +157,7 @@ input, textarea {
 }
 
 .form {
-    margin: 0 auto;
+    margin: 0 auto 5rem;
     display: flex;
     flex-direction: column;
 }
