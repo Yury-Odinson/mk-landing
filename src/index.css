@@ -32,6 +32,10 @@ input, textarea {
     border: 2px solid #DEDEDE77;
 }
 
+.error-clr {
+    color: #902423;
+}
+
 .App {
     margin: 0 auto;
 }
@@ -255,6 +259,18 @@ input, textarea {
     padding: 0.5rem 1rem;
     width: 100%;
     font-size: 1rem;
+}
+.form__data-label {
+
+    position: relative;
+}
+
+.input-error {
+    position: absolute;
+    bottom: -0.7rem;
+    left: 1rem;
+    color: #902423;
+    font-size: 0.8rem;
 }
 
 .form__data-comment {
