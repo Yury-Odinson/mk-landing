@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mk-landing/static/css/main.650c6067.css",
+    "main.js": "/mk-landing/static/js/main.905759d6.js",
+    "static/js/453.239c06e6.chunk.js": "/mk-landing/static/js/453.239c06e6.chunk.js",
+    "static/media/form-img.png": "/mk-landing/static/media/form-img.bdf4c3c6f0a6b3e609f4.png",
+    "index.html": "/mk-landing/index.html",
+    "main.650c6067.css.map": "/mk-landing/static/css/main.650c6067.css.map",
+    "main.905759d6.js.map": "/mk-landing/static/js/main.905759d6.js.map",
+    "453.239c06e6.chunk.js.map": "/mk-landing/static/js/453.239c06e6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.650c6067.css",
+    "static/js/main.905759d6.js"
+  ]
+}
