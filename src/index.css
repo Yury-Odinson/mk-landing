@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +13,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: rgba(222, 222, 222, 0.13);
+    background-color: #DEDEDE21;
 }
 
 code {
@@ -28,7 +34,7 @@ code {
 
 .header-wrapper {
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1.3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,10 +42,78 @@ code {
 }
 
 .header-wrapper > * {
-    padding: 0 7rem;
+    padding: 0 6rem;
 }
 
 .header__title {
     font-size: 1.3rem;
     font-weight: 500;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.slider {
+    margin: 4rem 0;
+    padding: 0 7.5rem;
+}
+
+.slider__title {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.slider__items {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+}
+
+.slider__item {
+    padding: 0.75rem;
+    display: flex;
+    gap: 0.4rem;
+    flex-direction: column;
+    max-width: 440px;
+    max-height: 530px;
+    background-color: #fff;
+    outline: 1px solid #DEDEDE77;
+    -webkit-box-shadow: 4px 4px 8px -6px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px -6px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px -6px rgba(34, 60, 80, 0.2);
+}
+
+.slider__item-chip {
+    padding: 0.25rem;
+    width: fit-content;
+    background: linear-gradient(90deg, #DF3735 0%, #902423 100%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.slider__item:nth-child(even) > .slider__item-chip {
+    background: linear-gradient(90deg, #1E4879 0%, #367ABD 100%);
+}
+
+.slider__item-img {
+    margin: 0.3rem 0;
+}
+
+.slider__item-title {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.slider__item-description {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    /*font-weight: 600;*/
 }

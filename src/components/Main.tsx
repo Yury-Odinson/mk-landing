@@ -4,9 +4,8 @@ import {Slider} from "./Slider";
 
 export const Main: React.FC = () => {
     return (
-        <main>
-            <span>main</span>
-            {/*<Slider/>*/}
+        <main className="main">
+            <Slider/>
             {/*<SubscriptionForm/>*/}
         </main>
     );

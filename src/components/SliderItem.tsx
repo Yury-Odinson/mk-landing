@@ -1,17 +1,15 @@
 import React from "react";
+import {SliderItemProps} from "../tools/types";
 
-interface Props {
-    name: string;
-    description: string;
-    imgSrc: string;
-}
-
-export const SliderItem: React.FC<Props> = ({name, description, imgSrc}) => {
+export const SliderItem: React.FC<SliderItemProps> = ({name, description, imgSrc, id}) => {
     return (
-        <div>
-            <img src={imgSrc} alt={name} width={42} height={42}/>
-            <span>{name}</span>
-            <p>{description}</p>
+        <div className="slider__item" id={"sl-item__" + id}>
+            <div className="slider__item-chip">
+                <span>карикатура</span>
+            </div>
+            <img className="slider__item-img" src={imgSrc} alt={name} />
+            <h3 className="slider__item-title">{name}</h3>
+            <p className="slider__item-description">{description}</p>
         </div>
     );
 };
