@@ -6,7 +6,7 @@ export const Main: React.FC = () => {
     return (
         <main className="main">
             <Slider/>
-            {/*<SubscriptionForm/>*/}
+            <SubscriptionForm/>
         </main>
     );
 };

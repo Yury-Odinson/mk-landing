@@ -28,6 +28,10 @@ button {
     scroll-behavior: smooth;
 }
 
+input, textarea {
+    border: 2px solid #DEDEDE77;
+}
+
 .App {
     margin: 0 auto;
 }
@@ -144,4 +148,168 @@ button {
 
 .slider__items::-webkit-scrollbar-track {
     height: 0;
+}
+
+.form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__content {
+    margin: 0 auto;
+    position: relative;
+    padding: 4.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form__border {
+    margin: 0 7.5rem;
+    height: 1px;
+    border-top: 1px solid #DEDEDE77;
+}
+
+.form__content > div {
+    max-width: 460px;
+}
+
+.form__background {
+    position: relative;
+    color: #fff;
+}
+
+.form__background-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+}
+
+.form__background-title {
+    font-weight: 700;
+}
+
+.form__background-description {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.form__data {
+    position: relative;
+    display: flex;
+    padding: 1.7rem 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-shadow: 4px 4px 8px -6px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px -6px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px -6px rgba(34, 60, 80, 0.2);
+}
+
+.form__data::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 24px;
+    height: 24px;
+    background-color: #DF3735;
+}
+
+.form__data::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    background-color: #1E4879;
+}
+
+.form__data-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form__data-container > label {
+    display: flex;
+    gap: 1rem;
+}
+
+.form__data-title {
+    font-size: 1.8rem;
+}
+
+.form__data-input {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.form__data-comment {
+    padding: 0.1rem 1rem;
+    resize: none;
+    width: 100%;
+    height: 130px;
+    font-size: 1rem;
+}
+
+.form__data-offer-txt {
+    width: 90%;
+    text-align: left;
+    font-size: 0.65rem;
+}
+
+.form__data-btn {
+    padding: 0.7rem;
+    /*height: 32px;*/
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #DF3735 0%, #902423 100%);
+}
+
+.default-checkbox {
+    display: none;
+}
+
+.custom-checkbox {
+    margin: 0 0 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.custom-checkbox input {
+    -webkit-appearance: none;
+}
+
+.checkbox {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #DEDEDE77;
+}
+
+.custom-checkbox input:checked ~ .checkbox {
+    display: block;
+}
+
+.custom-checkbox input:checked ~ .checkbox {
+    background: #fff;
+    border: 1px solid #367ABE;
+}
+
+.custom-checkbox input:checked ~ .checkbox::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #367ABE;
+    top: 2px;
+    left: 2px;
 }
